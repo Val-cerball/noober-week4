@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', async function() {
   for (let i = 0; i < rides.length; i++) {
 
 
-    // logic from hw3 
+    // logic from hw3 (((not working...I tried many ways but it didn't work :( )))
 
 let service 
 
@@ -27,7 +27,8 @@ let service
     }
   }
 
-  // insert HTML with level of service header for each ride
+  // insert service type info from html 
+
   document.querySelector('.rides').insertAdjacentHTML('beforeend', `
   <h1 class="inline-block mt-8 px-4 py-2 rounded-xl text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
     <i class="fas fa-car-side"></i>
@@ -41,7 +42,7 @@ for (let x = 0; x < rides.length; x++) {
   let detail = rides[x]
  
 
-  // insert HTML with the passenger detail data for each
+  // insert passenger details info from html
   document.querySelector('.rides').insertAdjacentHTML('beforeend', `
     <div class="border-4  p-4 my-4 text-left">
       <div class="flex">
